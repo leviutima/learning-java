@@ -1,4 +1,7 @@
 
+import java.util.ArrayList;
+
+
 public class Main {
 
     public static void main(String[] args) {
@@ -33,12 +36,29 @@ public class Main {
         var nomeDoMeio = "levi utima";
 
 
-        if(nomeDoMeio == "levi utima") {
+        if(nomeDoMeio == "levi yuki utima") {
             System.err.println("Boa, isso mesmo");
-        } else {
+        } else if (nomeDoMeio == "levi utima") {
+            System.out.println("Acertou por pouco");
+        } 
+        else {
             System.err.println("Vacilou kkkkkk");
         }
 
-    }
+        // vetores (arrays)
+        int[] colecaoDeInteiros = {1,2,3,4,5};
+        System.err.println(colecaoDeInteiros[0]);
+
+        // ArrayLists 
+        ArrayList<String> lista = new ArrayList<>();
+        lista.add("levi");
+        lista.add("utima");
+        lista.add("teste");
+        
+        // lista.remove(0);
+        System.err.println(lista);
+        }
+
+        
 
 }

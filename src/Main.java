@@ -1,7 +1,6 @@
 
 import java.util.ArrayList;
 
-
 public class Main {
 
     public static void main(String[] args) {
@@ -13,7 +12,6 @@ public class Main {
         meuNome = "LEVI YUKI UTIMA";
 
         // var nomeDaMinhaVariavel = "fernanda";
-        
 
         // tipos primitivos
         // byte, short, int, long
@@ -21,7 +19,7 @@ public class Main {
         // números inteiros
         // byte => 8bits => -128 a 127
         // short => 16bits => -32.768 a 32.767
-        // int =>  32bits => 2.147.483.648 a 2.147.483.647
+        // int => 32bits => 2.147.483.648 a 2.147.483.647
         // long => 64bits;
 
         // números decimais
@@ -35,30 +33,54 @@ public class Main {
 
         var nomeDoMeio = "levi utima";
 
-
-        if(nomeDoMeio == "levi yuki utima") {
+        if (nomeDoMeio == "levi yuki utima") {
             System.err.println("Boa, isso mesmo");
         } else if (nomeDoMeio == "levi utima") {
             System.out.println("Acertou por pouco");
-        } 
-        else {
+        } else {
             System.err.println("Vacilou kkkkkk");
         }
 
         // vetores (arrays)
-        int[] colecaoDeInteiros = {1,2,3,4,5};
+        int[] colecaoDeInteiros = { 1, 2, 3, 4, 5 };
         System.err.println(colecaoDeInteiros[0]);
 
-        // ArrayLists 
+        // ArrayLists
         ArrayList<String> lista = new ArrayList<>();
         lista.add("levi");
         lista.add("utima");
         lista.add("teste");
-        
+
         // lista.remove(0);
         System.err.println(lista);
+
+        // loops
+        // for(int i = 0; i < lista.size(); i++){
+        //    System.err.println(lista.get(i)); 
+        // }
+
+        for(String listas: lista) {
+            System.err.println(listas);
         }
 
-        
+        int contador = 0;
+        while (contador < 10) {
+            System.err.println(); 
+            contador++;
+        }
+
+        // casting 
+        double resultado = 0.0;
+        int resultadoInt = (int)resultado;
+
+        int meuInt = 10;
+        double conversaoParaDouble = meuInt;
+
+        String meuString = "10";
+        int meuInt2 = Integer.parseInt(meuString);
+        System.err.println(meuInt2);
+
+        String minhaString = String.valueOf(meuInt2);
+    }
 
 }
